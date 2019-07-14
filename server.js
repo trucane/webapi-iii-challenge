@@ -17,7 +17,7 @@ function logger(req, res, next) {
 server.use(logger)
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`)
+  res.send(`<h2>I need to do some styling!</h2>`)
 });
 
 server.use('/api/users', router);
