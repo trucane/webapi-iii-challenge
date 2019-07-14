@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const router = require('./users/userRouter')
 
@@ -21,7 +22,8 @@ server.get('/', (req, res) => {
 
 server.use('/api/users', router);
 
-const port = 5000;
+
+const port = process.env.PORT;
 
 server.listen(port, () => console.log('I am on port 5000'))
 
